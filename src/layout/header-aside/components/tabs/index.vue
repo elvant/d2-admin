@@ -31,9 +31,10 @@
       flex-box="0">
       <el-dropdown
         split-button
+        size="large"
         @click="handleControlBtnClick"
         @command="command => handleControlItemClick(command)">
-        <d2-icon name="times-circle"/>
+        <d2-icon name="times-circle" style="font-size:14px;"/>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="left">
             <d2-icon name="arrow-left" class="d2-mr-10"/>
