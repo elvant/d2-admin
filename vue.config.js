@@ -54,6 +54,11 @@ module.exports = {
     // 重新设置 alias
     config.resolve.alias
       .set('@', resolve('src'))
+
+    // 设置Elvant 框架
+    config.resolve.alias
+      .set('element-ui', 'elvant')
+
     // babel-polyfill 加入 entry
     const entry = config.entry('app')
     entry
