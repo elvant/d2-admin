@@ -5,6 +5,39 @@ export default {
   children: (pre => [
     { path: `${pre}index`, title: '试验台首页', icon: 'home' },
     {
+      title: 'svg 菜单图标',
+      iconSvg: 'd2-admin',
+      children: [
+        { title: 'add', iconSvg: 'add' },
+        { title: 'alarm', iconSvg: 'alarm' },
+        { title: 'camera', iconSvg: 'camera' },
+        { title: 'history', iconSvg: 'history' },
+        { title: 'like', iconSvg: 'like' },
+        { title: 'love', iconSvg: 'love' },
+        { title: 'message', iconSvg: 'message' },
+        { title: 'notice', iconSvg: 'notice' },
+        { title: 'search', iconSvg: 'search' },
+        { title: 'share', iconSvg: 'share' },
+        { title: 'star', iconSvg: 'star' },
+        { title: 'user', iconSvg: 'user' }
+      ]
+    },
+    {
+      title: '空菜单演示',
+      icon: 'folder-o',
+      children: [
+        {
+          title: '正在开发 1',
+          children: [
+            { title: '正在开发 1-1' },
+            { title: '正在开发 1-2' }
+          ]
+        },
+        { title: '正在开发 2' },
+        { title: '正在开发 3' }
+      ]
+    },
+    {
       path: `${pre}page-cache`,
       title: '页面缓存',
       icon: 'hdd-o',
@@ -27,8 +60,8 @@ export default {
       title: '全局状态管理',
       icon: 'bolt',
       children: [
-        { path: `${pre}store/sys`, title: '系统状态', icon: 'microchip' },
         { path: `${pre}store/menu`, title: '菜单控制', icon: 'bars' },
+        { path: `${pre}store/size`, title: '全局尺寸', icon: 'font' },
         { path: `${pre}store/ua`, title: '浏览器信息', icon: 'info-circle' },
         { path: `${pre}store/gray`, title: '灰度模式', icon: 'eye' },
         { path: `${pre}store/fullscreen`, title: '全屏', icon: 'arrows-alt' },
